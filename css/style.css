@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Common CSS */
+.full-wrapper{
+  background-image: url("../img/bg.jpg");
+  background-color: rgb(255 255 255 / 85%);
+  background-blend-mode: soft-light;
+  background-size: cover;
+  background-position: 50% 50%;
+  font-family: 'doodads-regular', sans-serif;
+  color: #505050;
+  min-height: 100vh;
+  position: relative;
+  
+}
+.welcome-to-avion, .entre-info, .record-message, .confirmed, .listen{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 320px;
+    margin: 0 auto;
+    
+}
+h2.av-heading {
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #505050;
+    font-weight: lighter;
+    padding-bottom: 50px;
+}
+
+.av-logo-top{
+    padding-bottom: 85px;
+}
+
+button.av-btn {
+    margin-top: 60px;
+    border: 2px solid #505050;
+    width: 100%;
+    padding: 15px;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #505050;
+    background: transparent;
+
+}
+.entre-info, .record-message, .confirmed, .listen{
+    height: auto;
+    padding: 30px 0 80px;
+}
+
+.av-center-img {
+    text-align: center;
+    padding: 20px 0 50px;
+}
+/* Sender - 02 */
+
+.avion-form input:focus{
+    outline: none;
+    box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    -o-box-shadow: none !important;
+    -ms-box-shadow: none !important; }
+  
+.avion-form input[type=checkbox] {
+    appearance: checkbox !important;
+    -moz-appearance: checkbox !important;
+    -webkit-appearance: checkbox !important;
+    -o-appearance: checkbox !important;
+    -ms-appearance: checkbox !important; 
+}
+.avion-form input{
+    background: transparent;
+    width: 100%;
+    display: block;
+    border: none;
+    border-bottom: 2px solid #cccccc;
+    padding: 5px 0;
+    color: #505050;
+    margin-bottom: 30px;
+    font-size: 19px;
+    font-family: 'doodads-regular', sans-serif;
+}
+      
+.avion-form  input:focus{
+    color: #505050;
+    border-bottom: 2px solid #505050; 
+}
+      
+.avion-form input[type=checkbox]:not(old) {
+    width: 1em;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+        
+.label-agree-term {
+    color: #505050; 
+    font-size: 17px;
+}
+
+/* Sender - 03 & 04*/
+.av-center-img p{
+    padding: 10px;
+}
+
+.str-over-txt {
+    text-transform: uppercase;
+    font-size: 13px;
+    text-align: center;
+    text-decoration: underline;
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+} 
+.full-wrapper .av-audio {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.av-audio img{
+    width: 100%;
+    height: auto;
+    vertical-align: bottom; 
+
+}
+.record-icon svg{
+    border-radius: 50%;
+}
+
+/* Sender - 05*/
+.av-audio audio{
+    width: 100%;
+    height: 50px;
+}
+#avRecordAgain{
+    margin-top: 20px;
+}
+.av-audio audio::-webkit-media-controls-enclosure {
+    border-radius: 0px;
+    background-color: #cbcbcb;
+    height: 50px;
+}
+
+/* audio::-webkit-media-controls-mute-button {
+    display: none !important;
+} */
+
+/* Sender - 06*/
+.confirmed .av-heading{
+    font-size: 50px;
+    padding-top: 2rem;
+    padding-bottom: 20px;
+}
+.code-container p{
+    font-size: 30px;
+    padding: 20px 0px;
+    text-align: center;
+}
+.code-container .audio-unique-code{
+    font-size: 50px;
+    border-bottom: 2px solid #505050;
+}
+/* Recipient - 02 - 03*/
+.listen{
+    padding-bottom: 200px;
+}
+.listen .av-logo-top{
+    padding-bottom: 50px;
+}
+#avListen{
+    margin-top: 0;
+}
+.sender-receiver{
+    text-align: center;
+}
+.sender-receiver p {
+    font-size: 39px;
+    padding: 10px;
+}
+.sender-receiver span {
+    font-size: 30px;
+}
+.share-save{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    right: 50%;
+}
+.share-icon, .save-icon{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 15px;
+}
+.share-icon svg, .save-icon svg{
+    margin-bottom: 10px;
+}
+.listen .av-audio{
+    padding-top: 6rem;
+}
